@@ -353,6 +353,10 @@ strong {
   background: #f8426c;
   z-index: 3;
 }
+.s4 {
+  background: #16c79a;
+  z-index: 4;
+}
 
 .site_box .info {
   text-align: center;

@@ -1,0 +1,620 @@
+@charset "utf-8";
+
+@media(max-width:1240px) {
+
+    /* header */
+    .header_inner .header_nav ul {
+        gap: 10px;
+    }
+
+    .header_inner .header_nav ul li a {
+        font-size: 2vw;
+    }
+
+    /* intro */
+    .tile-grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .intro-content .tagline {
+        font-size: 1.6vw;
+    }
+
+    .intro-content h2 {
+        font-size: 1.5vw;
+    }
+
+    .scroll-btn {
+        font-size: 1.2vw;
+    }
+   /* profile */
+    .profile_skills li img {
+        width: 3.5vw;
+    }
+
+    .port_grid {
+        width: 90%;
+        height: auto;
+        gap: 4vw;
+    }
+    .profile_text .job {
+        font-size: 1.4vw;
+    }
+
+    .profile_text .desc {
+        line-height: 1.7;
+        font-size: 1.2vw;
+    }
+
+    .profile_text a {
+        font-size: 1.5vw;
+    }
+
+    /* port */
+    #port h2 {
+        padding-top: 3vw;
+    }
+
+    #port .desc {
+        padding-top: 2vw;
+        font-size: 1.5vw;
+    }
+
+    /* site */
+    #site .site_desc {
+        top: 60px;
+        font-size: 1.5vw;
+    }
+
+    .site_box .info a {
+        padding: 10px;
+        font-size: 1.7vw;
+    }
+
+    .contact_keywords span {
+        letter-spacing: 1.5px;
+    }
+
+    /* footer */
+    .footer_logo p {
+        font-size: 1.3vw;
+    }
+
+    .footer_menu li a {
+        font-size: 1.2vw;
+    }
+
+    .footer_copy p {
+        font-size: 1vw;
+    }
+
+}
+
+@media(max-width:980px) {
+    .header_inner .header_nav ul li a {
+        font-size: 2.1vw;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    /* header */
+    .header_inner {
+        position: relative;
+    }
+    .header_inner .header_nav ul li a {
+        font-size: 2.5vw;
+    }
+
+    .header_inner .header_mnav {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    }
+    .header_inner .header_mnav::after, .header_inner .header_mnav::before {
+        content: "";
+        display: block;
+        background-color: white;
+        position: absolute;
+        width: 35px;
+        height: 3px;
+        transition: all 0.3s;
+    }
+    .header_inner .header_mnav::after{
+        top: 8px;
+        left: 0;
+    }
+    .header_inner .header_mnav:hover::after,
+    .header_inner .header_mnav:hover::before{
+        width: 20px;
+    }
+
+    .header_inner .header_mnav::before {
+        bottom: 8px;
+        right: 0;
+    }
+    .header_inner .header_nav {
+        position: absolute;
+        bottom: -175px;
+        right: -200px;
+        gap: 0;
+        background-color: rebeccapurple;
+        z-index: 5;
+        padding-top: 0px;
+        text-align: center;
+        width: 150px;
+        transition: all 0.3s;
+    }
+    .header_inner .header_nav.open {
+        right: 0;
+    }
+
+    .header_inner .header_nav ul {
+    padding-top: 0px;
+    display: inline;
+    }
+    .header_inner .header_nav ul li {
+    display: block;
+    height: 35px;
+     
+}
+    .header_inner .header_nav ul li a {
+        display: block;
+    }
+
+    /* #intro */
+
+    .intro-content h1 {
+        font-size: 7vw;
+    }
+
+    .intro-content h2 {
+        font-size: 2vw;
+    }
+
+    .intro-content .tagline {
+        font-size: 3vw;
+    }
+
+    .scroll-btn {
+        font-size: 1.8vw;
+    }
+
+    /* profile */
+    #profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        gap: 0rem;
+    }
+
+    .profile_img {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile_img img {
+        max-width: 250px;
+        width: 80%;
+        border-radius: 50%;
+    }
+
+    .profile_text {
+        text-align: center;
+    }
+
+    .profile_text h2 {
+        padding-top: 5vw;
+    }
+
+    .profile_text {
+        text-align: center;
+    }
+
+    .profile_text .job {
+        font-size: 1.8vw;
+    }
+
+    .profile_text .desc {
+        line-height: 1.5;
+        font-size: 1.8vw;
+        letter-spacing: 0;
+        display: inline-block;
+    }
+
+    .profile_text a {
+        display: inline-block;
+        font-size: 2vw;
+        width: 100%;
+    }
+
+    .profile_skills {
+        padding-top: 4vw;
+    }
+
+
+
+    /* site */
+    .site_box {
+        height: 60vh;
+        justify-content: left;
+        padding-left: 9vw;
+    }
+
+
+
+    /* port */
+
+    #port {
+        padding: 5vw 3vw;
+    }
+
+    #port h2 {
+        padding-top: 0vw;
+        height: 5vh;
+    }
+
+    #port .desc {
+        padding-top: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .port_img img {
+        transition: object-position 3s ease;
+    }
+
+    .port_grid {
+        width: 50%;
+        height: auto;
+        display: grid;
+        justify-content: center;
+        align-items: start;
+        margin: 0 auto;
+    }
+
+    .port_item {
+        height: 230px;
+
+    }
+
+    .port_img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        height: -webkit-fill-available;
+    }
+
+    .contact_sub {
+        font-size: 2vw;
+    }
+
+    .contact_keywords span {
+        font-size: 1.8vw;
+    }
+
+    .footer_logo h3 {
+        font-size: 3vw;
+    }
+
+    .footer_logo p {
+        font-size: 1.7vw;
+    }
+
+    .footer_menu {
+        gap: 2.5vw
+    }
+
+    .footer_menu li a {
+        font-size: 2vw;
+    }
+
+    .footer_copy p {
+        font-size: 1.7vw;
+    }
+
+    .top_btn {
+        right: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* header */
+    .header_inner {
+        height: 80px;
+    }
+    .header_inner .header_nav {
+        width: 100px;
+    }
+    .header_inner .header_mnav {
+        width: 25px;
+    }
+    .header_inner .header_mnav::after, .header_inner .header_mnav::before {
+        width: 25px;
+    }
+    .header_inner .header_logo h1 {
+        letter-spacing: 3px;
+    }
+
+    .header_inner .header_nav ul {
+        gap: 0px;
+    }
+
+    /* intro */
+    #intro {
+        height: calc(100vh - 85px);
+    }
+
+    /* profile */
+    .profile_text .job {
+        font-size: 2.8vw;
+    }
+
+    .profile_text .desc {
+        line-height: 1.4;
+        font-size: 2.8vw;
+    }
+
+    .profile_text a {
+        font-size: 3vw;
+    }
+
+    .profile_skills h3 {
+        font-size: 2.2vw;
+    }
+
+    .profile_skills li img {
+        width: 6.5vw;
+    }
+
+    /* #site */
+    #site .site_desc {
+        top: 50px;
+        font-size: 2.5vw;
+    }
+
+    /* port */
+    .port_item {
+        height: 170px;
+    }
+
+    #port .desc {
+        padding-top: 2vw;
+        font-size: 2.5vw;
+    }
+
+    .port_grid {
+        width: 70%;
+        gap: 20px;
+        height: auto;
+    }
+
+    .port_item .overlay h3 {
+        font-size: 3vw;
+    }
+
+    .port_item .overlay p {
+        font-size: 2.3vw;
+    }
+
+    /* contac */
+    .contact_inner {
+        padding: 0px 0vw;
+    }
+
+    .contact_sub {
+        font-size: 3vw;
+    }
+
+    .contact_keywords {
+        gap: 2vw;
+    }
+
+    .contact_keywords span {
+        padding: 10px 10px;
+        font-size: 2.3vw;
+    }
+
+    .contact_motion h3 {
+        font-size: 3vw;
+    }
+
+    /* footer */
+    .footer_logo p {
+        font-size: 2.4vw;
+    }
+
+    .footer_menu li a {
+        font-size: 3vw;
+    }
+
+    .footer_copy p {
+        font-size: 2.5vw;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    .header_inner {
+        height: 60px;
+    }
+    .header_inner .header_nav ul li a {
+        padding: 5px 4px;
+        font-size: 3.1vw;
+    }
+
+    .header_inner .header_nav ul {
+        padding-top: 33px;
+        margin-top: 0;
+    }
+
+    .intro-content .tagline {
+        font-size: 4vw;
+    }
+
+    .intro-content h2 {
+        font-size: 2.7vw;
+        white-space: nowrap;
+    }
+
+    .scroll-btn {
+        font-size: 2.8vw;
+    }
+
+    .profile_text h2 {
+        font-size: 4.5vw;
+    }
+
+    .profile_text .job {
+        font-size: 3.2vw;
+    }
+
+    .profile_text .desc {
+        line-height: 1.5;
+        font-size: 3.5vw;
+    }
+
+    .profile_text a {
+        font-size: 3.4vw;
+    }
+
+    .profile_skills h3 {
+        font-size: 3vw;
+    }
+
+    .profile_skills li img {
+        width: 7.5vw;
+    }
+
+    #site {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    #site .site_title,
+    #site .site_desc {
+        position: static;
+        margin: 0;
+        text-align: center;
+    }
+
+    #site .site_title {
+        height: 0;
+        padding: 20px 0;
+    }
+
+    #site .site_desc {
+        top: 0;
+        font-size: 3vw;
+    }
+
+    .site_scroll {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .site_box {
+        position: relative;
+        right: 0 !important;
+        transform: none !important;
+        opacity: 1 !important;
+        width: 90%;
+        height: 150px;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .site_box .info h3 {
+        text-transform: uppercase;
+        font-size: 3.7vw;
+    }
+
+    .site_box .info p {
+        font-size: 2.8vw;
+        padding-top: 7px;
+    }
+
+    .site_box .info a {
+        padding: 10px 25px;
+        font-size: 2.7vw;
+        border: 2px solid white;
+    }
+
+    #port h2 {
+        padding: 20px 0;
+        height: 0vh;
+        line-height: 0;
+    }
+
+    #port {
+        padding: 5vw;
+    }
+
+
+
+    #port .desc {
+        padding-top: 0;
+        font-size: 3vw;
+    }
+
+    .contact_sub {
+        font-size: 3.2vw;
+    }
+
+    .contact_inner {
+        padding: 0 1vw;
+    }
+
+    .contact_keywords span {
+        padding: 5px;
+        font-size: 2.8vw;
+    }
+
+    .top_btn {
+        width: 35px;
+        height: 35px;
+        right: 10px;
+    }
+
+}
+
+@media (max-width: 340px) {
+    .header_inner {
+    }
+
+    .profile_img img {
+        max-width: 200px;
+    }
+
+}

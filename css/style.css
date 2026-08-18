@@ -17,6 +17,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-padding-top: 100px;
+}
 li {
   list-style: none;
 }
@@ -63,8 +66,17 @@ strong {
 
 /* header */
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  background-color: #000;
   border-bottom: 3px solid white;
+  z-index: 1000;
+}
+
+main {
+  padding-top: 100px;
 }
 .header_inner {
   width: 100%;

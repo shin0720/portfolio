@@ -88,10 +88,12 @@ function setupScrollTrigger() {
     // 박스 오른쪽 밖에서 시작
     gsap.set(boxes, { right: "-100%" });
 
+    const headerHeight = document.getElementById("header").offsetHeight;
+
     gsap.timeline({
       scrollTrigger: {
         trigger: "#site",
-        start: "top top",
+        start: "top top+=" + headerHeight,
         end: "+=" + boxes.length * 1000,
         scrub: true,
         pin: true,

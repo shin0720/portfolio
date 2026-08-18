@@ -99,7 +99,7 @@ function setupScrollTrigger() {
       }
     })
     .to(boxes, {
-      right: (i) => `${Math.min(i, 2) * -8}%`,
+      right: (i) => `${i * -5}%`,
       opacity: 1,
       stagger: 1,
       ease: "power1.inOut"
